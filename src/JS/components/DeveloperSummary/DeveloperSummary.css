@@ -11,10 +11,10 @@
    width: 100%;
    padding: 5px 0px;
    border: none;
-   background-color: #3578E5;
+   background-color: #c5e535;
    color: #fff;
    border-radius:3px;
 }
 .user-btn:hover{
-   background-color: #2e5fad;
+   background-color: #d2f700;
 }

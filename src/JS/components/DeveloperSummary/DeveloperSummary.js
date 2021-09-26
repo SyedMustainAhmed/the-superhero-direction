@@ -1,6 +1,6 @@
 import React from 'react';
 import './DeveloperSummary.css';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faHandHoldingUsd } from '@fortawesome/free-solid-svg-icons';
 
 const DeveloperSummary = (props) => {

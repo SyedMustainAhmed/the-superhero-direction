@@ -8,9 +8,11 @@ const Cart = (props) => {
     const totalSalary = cart.reduce((previous, current) => previous + current.salary, 0)
     return (
         <div className="cart">
-            <h5 > People Added: {cart.length}</h5>
-            <h5 style={{ color: '#49a6e9' }}><span><FontAwesomeIcon icon={faUser} /></span> Developer Added: {cart.length}</h5>
-            <h5>Total Pay Salary: ${totalSalary}</h5>
+            <div className="cart-length">
+                <h5 style={{ color: '#49a6e9' }}><span><FontAwesomeIcon icon={faUser} /></span> Developer Added: {cart.length}</h5>
+                <h5>Total Pay Salary: ${totalSalary}</h5>
+            </div>
+            <div ></div>
 
             {
                 cart.map(info => <div className="addUser" key={info.id}>
