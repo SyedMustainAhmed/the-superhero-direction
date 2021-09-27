@@ -17,9 +17,9 @@ const Cart = (props) => {
             {
                 cart.map(info => <div className="addUser" key={info.id}>
                     <div className="cart-info">
-                        <div className="cart-img">
+                        {/* <div className="cart-img">
                             <img className="w-100 rounded-circle" src={info.img} alt="" />
-                        </div>
+                        </div> */}
                         <div>
                             <h6><strong>Name: </strong>{info.name}</h6>
                             <p><strong>Email:</strong> {info.email}</p>

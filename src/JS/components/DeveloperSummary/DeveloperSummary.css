@@ -7,14 +7,21 @@
     width: 80%;
     border-radius: 50%;
 }
-.user-btn{
-   width: 100%;
+.developer-btn{
+   width: 30%;
    padding: 5px 0px;
    border: none;
    background-color: #c5e535;
    color: #fff;
    border-radius:3px;
 }
-.user-btn:hover{
-   background-color: #d2f700;
+.developer-btn:hover{
+   background-color: burlywood;
+}
+.img{
+    width:300px;
+    height:300px;
+}
+.bottom{
+    margin-bottom: 20px;
 }

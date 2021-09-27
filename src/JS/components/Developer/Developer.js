@@ -8,20 +8,20 @@ const Developer = () => {
     const [cart, setCart] = useState([]);
 
     useEffect(() => {
-        fetch('../../../../public/developer.json')
+        fetch('./developer.JSON')
             .then(res => res.json())
             .then(data => setDeveloper(data))
     }, [])
 
     const handleDeveloperAdded = (developer) => {
         const existId = cart.find(addedId => addedId.id === developer.id);
-        if (existId) {
-            alert("This developer already added!!");
-        }
-        else {
-            const newCart = [...cart, developer];
-            setCart(newCart)
-        }
+        // if (existId) {
+        //     alert("This developer already added!!");
+        // }
+        // else {
+        const newCart = [...cart, developer];
+        setCart(newCart)
+
     }
     return (
         <div className="developer-container">

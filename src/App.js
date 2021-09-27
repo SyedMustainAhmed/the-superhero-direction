@@ -1,6 +1,7 @@
 import './App.css';
-import Developer from './JS/components/Developer/Developer';
 import Header from './JS/components/Header/Header';
+import Developer from './JS/components/Developer/Developer';
+
 
 
 function App() {
@@ -9,7 +10,6 @@ function App() {
 
       <Header></Header>
       <Developer></Developer>
-
     </div>
   );
 }
