@@ -15,10 +15,7 @@ const Developer = () => {
 
     const handleDeveloperAdded = (developer) => {
         const existId = cart.find(addedId => addedId.id === developer.id);
-        // if (existId) {
-        //     alert("This developer already added!!");
-        // }
-        // else {
+
         const newCart = [...cart, developer];
         setCart(newCart)
 
