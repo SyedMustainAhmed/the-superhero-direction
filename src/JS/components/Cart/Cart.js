@@ -5,12 +5,16 @@ import { faUser } from '@fortawesome/free-solid-svg-icons';
 
 const Cart = (props) => {
     const { cart } = props;
-    const totalSalary = cart.reduce((previous, current) => previous + current.salary, 0)
+    let Total = 0;
+    for (const developer of cart) {
+        Total = Total + developer.Salary;
+    }
     return (
         <div className="cart">
             <div className="cart-length">
                 <h5 style={{ color: '#49a6e9' }}><span><FontAwesomeIcon icon={faUser} /></span> Developer Added: {cart.length}</h5>
-                <h5>Total Pay Salary: ${totalSalary}</h5>
+                <br />
+                <h5>Total Pay Salary: ${Total}</h5>
             </div>
             <div ></div>
 
@@ -21,8 +25,8 @@ const Cart = (props) => {
                             <img className="w-100 rounded-circle" src={info.img} alt="" />
                         </div> */}
                         <div>
-                            <h6><strong>Name: </strong>{info.name}</h6>
-                            <p><strong>Email:</strong> {info.email}</p>
+                            <h6><strong>Name:</strong>{info.name}</h6>
+                            <p><strong>Email:</strong> {info.Email}</p>
                         </div>
                     </div>
                 </div>)
